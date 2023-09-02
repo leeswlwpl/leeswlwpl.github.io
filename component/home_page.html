@@ -32,10 +32,10 @@
         </div>
 
         <div class="row mt-5">
-            <div class="col-lg-4">
+            <div class="col-md-4">
                 <img src="assets/img/self_photo_cut_styled.jpg" class="img-fluid" alt="">
             </div>
-            <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <div class="col-md-8 pt-4 pt-md-0 content">
                 <h3>Tech Lead & Co-Founder</h3>
                 <p class="fst-italic">
                     All-round software engineer with 5 years of extensive experience, including mobile apps, websites, cloud service, databases & SQL, IoT, Web3, and blockchain technology.
@@ -43,7 +43,7 @@
 
                 </p>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-md-5">
                         <ul>
                             <li><i class="bi bi-rounded-right"></i> <strong>Email:</strong> leeswlwpl@gmail.com</li>
                             <!--                            <li><i class="bi bi-rounded-right"></i> <strong>Website:</strong> www.example.com</li>-->
@@ -53,7 +53,7 @@
 
                         </ul>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-7">
                         <ul>
 
                             <li><i class="bi bi-rounded-right"></i> <strong>Degree:</strong> Information Engineering in CUHK</li>
@@ -304,10 +304,6 @@
 
 <script>
     (function() {
-        "use strict";
-        /**
-         * Easy selector helper function
-         */
         const select = (el, all = false) => {
             el = el.trim()
             if (all) {
@@ -317,14 +313,12 @@
             }
         }
 
-        /**
-         * Skills animation
-         */
+        // Skills animation
         let skillsContent = select('.skills-content');
         if (skillsContent) {
             new Waypoint({
                 element: skillsContent,
-                offset: '10%',
+                offset: '70%',
                 duration: 3000,
                 handler: function(direction) {
                     let progress = select('.progress .progress-bar', true);
@@ -335,10 +329,7 @@
             })
         }
 
-
-        /**
-         * Initiate Pure Counter
-         */
+        // Facts animation
         new PureCounter();
 
     })()
