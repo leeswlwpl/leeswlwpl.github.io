@@ -7,15 +7,10 @@
 }
 
 
-.round_corner
-
-
 
 .body {
     /*background-color: var(--custom_white);*/
 }
-
-
 .header{
     /*background-color: var(--custom_blue_dark);*/
 }
@@ -23,8 +18,8 @@
 
 .main{
     padding-top: 80px;
+    min-height: 1600px;
 }
-
 
 
 .navbar{
@@ -74,12 +69,4 @@
 .nav-link:hover{
     color: white;
 }
-
-
-
-.main{
-    /* for dev only */
-    height: 1500px;
-}
-
 
