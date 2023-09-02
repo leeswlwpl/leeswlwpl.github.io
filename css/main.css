@@ -4,6 +4,7 @@
     --custom_blue_dark: #2c3e50;
     --custom_blue: #49627a;
     --custom_grey: #6c757d;
+    --custom_green: #34b7a7;
 }
 
 
@@ -69,4 +70,27 @@
 .nav-link:hover{
     color: white;
 }
+
+
+
+.divider_short {
+    /*position: absolute;*/
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: var(--custom_green);
+    bottom: 0;
+    left: calc(50% - 25px);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
 
