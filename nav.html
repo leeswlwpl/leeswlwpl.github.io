@@ -1,35 +1,31 @@
-<header class="header bg-dark">
-    <div class="container">
-            <!--            <div class="col-sm-12 col-md-4">-->
-            <!--&lt;!&ndash;                <h3>Anthony Lee</h3>&ndash;&gt;-->
-            <!--            </div>-->
+<header class="header bg-dark fixed-top">
+
+    <nav class="navbar navbar-expand-sm navbar-dark ">
+        <div class="container">
+            <a class="navbar-brand rounded" href="/leeswlwpl.github.io/">Anthony Lee</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item rounded">
+                        <a class="nav-link" href="/leeswlwpl.github.io/">Home</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link" href="/leeswlwpl.github.io/about.html">About</a>
+                    </li>
+                    <li class="nav-item rounded">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
-<!--            <nav class="navbar navbar-expand-sm navbar-light bg-light">-->
-            <nav class="navbar navbar-expand-sm navbar-dark">
-                    <a class="navbar-brand rounded" href="/leeswlwpl.github.io/">Anthony Lee</a>
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item rounded active">
-                                <a class="nav-link" href="/leeswlwpl.github.io/">Home</a>
-                            </li>
-                            <li class="nav-item rounded">
-                                <a class="nav-link" href="/leeswlwpl.github.io/about.html">About</a>
-                            </li>
-                            <li class="nav-item rounded">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-            </nav>
-
-
-    </div>
 
 </header>
 
@@ -38,3 +34,18 @@
 <style>
 
 </style>
+
+<script>
+    $(document).ready(function() {
+        // Get the current URL path
+        var path = window.location.pathname;
+
+        // Find the <a> element with matching href and add active class
+        $(".navbar-nav li a").each(function() {
+            if ($(this).attr("href") === path) {
+                $(this).parent().addClass("active");
+            }
+        });
+    });
+</script>
+
