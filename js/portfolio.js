@@ -77,10 +77,16 @@ waitForElm('.portfolio-container div div img').then((elm) => {
     portfolio()
 
     window.setTimeout(() => {
+        //     change portfolio-container display to block
+        const container = document.getElementById('portfolio-container');
+        container.style.display = 'block';
+
+
         const button = document.getElementById('filter-all');
         button.click();
+    }, 250);
 
-    }, 100);
+
 });
 
 
