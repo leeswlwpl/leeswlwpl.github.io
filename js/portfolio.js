@@ -78,17 +78,20 @@ waitForElm('.portfolio-container div div img').then((elm) => {
         const container = document.getElementById('portfolio-container');
         container.style.display = 'block';
 
-
         const button = document.getElementById('filter-all');
         button.click();
     }, 250);
 
-    const portfolioLightbox = GLightbox({
-        selector: '.portfolio-lightbox'
-    });
 
+    window.setTimeout(() => {
+        const button = document.getElementById('filter-all');
+        button.click();
 
-
+        const portfolioLightbox = GLightbox({
+            selector: '.portfolio-lightbox'
+        });
+    }, 750);
+    
 });
 
 
