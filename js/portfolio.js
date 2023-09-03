@@ -18,9 +18,6 @@ const on = (type, el, listener, all = false) => {
 }
 
 
-const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
-});
 
 
 function portfolio(){
@@ -85,6 +82,11 @@ waitForElm('.portfolio-container div div img').then((elm) => {
         const button = document.getElementById('filter-all');
         button.click();
     }, 250);
+
+    const portfolioLightbox = GLightbox({
+        selector: '.portfolio-lightbox'
+    });
+
 
 
 });
