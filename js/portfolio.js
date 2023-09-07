@@ -84,26 +84,33 @@ waitForElm('.portfolio-container div div img').then((elm) => {
 
 
     window.setTimeout(() => {
-        const button = document.getElementById('filter-all');
-        button.click();
+        if (checkActiveTab_isAll()){
+            const button = document.getElementById('filter-all');
+            button.click();
+        }
 
     }, 750);
 
     window.setTimeout(() => {
-        const button = document.getElementById('filter-all');
-        button.click();
+        if (checkActiveTab_isAll()){
+            const button = document.getElementById('filter-all');
+            button.click();
+        }
 
         const portfolioLightbox = GLightbox({
             selector: '.portfolio-lightbox'
         });
     }, 1500);
-
-
-
-
 });
 
 
+function checkActiveTab_isAll(){
+    let activeTab = document.querySelector('#portfolio-filters .filter-active');
+    if (activeTab.getAttribute('data-filter')=='*'){
+        return true;
+    }
+    return false;
+}
 
 
 
